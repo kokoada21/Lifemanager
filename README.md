@@ -1,4 +1,4 @@
-# Lifemanager
+# LifeManager
 - This project was built using Java 8 and Maven. UI is implemented using the JavaFX package and testing is done using the JUnit 5.x framework. It was developed as part of course 4IT115 Software engineering at the University of economics in Prague. 
 - It is a simple reminders style app which also implementents incentives for the user to complete his/her tasks on time. 
 
@@ -8,3 +8,7 @@
 4. `git clone git@github.com:example/test.git`
 5. `mvn clean package`
 6. `java -jar target/Lifemang-1.0.0-SNAPSHOT.jar`
+
+<br/>
+
+![lifemang_screen](https://github.com/kokoada21/Lifemanager/assets/110021779/90b905e0-a96c-41f2-a0f6-8a7c3137f2f9)
