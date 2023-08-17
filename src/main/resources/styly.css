@@ -1,0 +1,91 @@
+#userName{
+    -fx-font-weight: bold;
+}
+#userBody{
+    -fx-font-weight: bold;
+}
+#seznamSlozek{
+    -fx-border-color: #2C9ECF ;
+    -fx-border-radius: 5 5 5 5;
+
+}
+#seznamSlozek .list-cell{
+    -fx-font-size: 15px;
+}
+
+#seznamSlozek .list-cell:selected{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-background-color: grey;
+}
+
+#listViewTasks{
+    -fx-padding: 15px;
+    -fx-spacing: 5;
+}
+#listViewTasksDone{
+    -fx-padding: 15px;
+    -fx-spacing: 5;
+}
+
+.hbox{
+    -fx-border-radius: 5;
+    -fx-border-color: #2C9ECF;
+    -fx-border-width: 1;
+}
+#textNazev{
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+#infoTask{
+    -fx-border-radius: 5;
+    -fx-border-color: #2C9ECF;
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10;
+    -fx-border-width: 2;
+}
+
+#infoTasksDone{
+    -fx-border-radius: 5;
+    -fx-border-color: grey;
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10;
+    -fx-border-width: 2;
+}
+
+#taskButtonsBox{
+    -fx-spacing: 5;
+}
+#editVbox{
+    -fx-padding: 20;
+}
+
+#buttonStyly{
+    -fx-color:black;
+    -fx-padding:4;
+    -fx-background-color: #2c9ecf;
+    -fx-background-radius: 10;
+}
+
+#buttonStyly:pressed{
+    -fx-background-color: white;
+}
+
+#doneButtonStyly{
+    -fx-color:black;
+    -fx-padding:4;
+    -fx-background-color: grey;
+    -fx-background-radius: 10;
+}
+
+#doneButtonStyly:pressed{
+    -fx-background-color: white;
+}
+
+#editBox{
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-padding: 20;
+    -fx-min-width: 420;
+}

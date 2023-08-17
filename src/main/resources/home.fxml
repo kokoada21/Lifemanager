@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="900.0" prefHeight="800.0" prefWidth="1129.0" stylesheets="styly.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.java.vse.tymovaprace.vanv08.Main.HomeController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="430.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="400.0" prefWidth="699.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="244.0" minHeight="-Infinity" prefHeight="151.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="403.0" minHeight="-Infinity" prefHeight="356.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="-Infinity" prefHeight="253.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="278.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <Pane layoutY="-2.0" prefHeight="165.0" prefWidth="430.0" style="-fx-background-color: #2c9ecf;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="logo1" fill="#ffcd1e" layoutX="129.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Life">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="logo" fill="WHITE" layoutX="179.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Text fx:id="userName" fill="WHITE" layoutX="92.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="userName" wrappingWidth="150.6708984375">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text fx:id="userBody" fill="WHITE" layoutX="301.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="body">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="256.0" prefWidth="363.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="369.0" prefWidth="430.0" style="-fx-background-color: #2c9ecf;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ListView fx:id="seznamSlozek" layoutX="87.0" layoutY="65.0" onMouseClicked="#vybratSlozka" prefHeight="215.0" prefWidth="258.0" />
+            <Label layoutX="88.0" layoutY="40.0" text="Folders:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonAddSlozka" layoutX="88.0" layoutY="296.0" mnemonicParsing="false" onAction="#buttonAddSlozka" prefHeight="25.0" prefWidth="104.0" text="New folder">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="buttonDelteSlozka" layoutX="232.0" layoutY="296.0" mnemonicParsing="false" onAction="#buttonDeleteSlozka" text="Delete folder">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="266.0" prefWidth="430.0" style="-fx-background-color: #2c9ecf;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="resetButton" layoutX="188.0" layoutY="142.0" mnemonicParsing="false" onAction="#resetApp" text="reset" />
+                  <Button fx:id="leaderboardButton" layoutX="160.0" layoutY="82.0" mnemonicParsing="false" onAction="#showLeaderboard" style="-fx-background-color: FFCD1E;" text="LeaderBoard">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Text fill="WHITE" layoutX="144.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© LifeManager 2021" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="684.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="buttonAddUkol" alignment="CENTER" layoutX="581.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#pridatUkol" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: FFCD1E;" text="New task" textFill="#0d0d0d" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="57.0" layoutY="41.0" text="Folder:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Text fx:id="folderNameField" fill="#2c9ecf" layoutX="126.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Folder name">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="undoneScrollPane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <content>
+            <VBox fx:id="listViewTasks" prefHeight="351.0" prefWidth="693.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="doneScrollPane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+         <content>
+            <VBox fx:id="listViewTasksDone" prefHeight="251.0" prefWidth="693.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</GridPane>

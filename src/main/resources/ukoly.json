@@ -1,0 +1,21 @@
+{
+  "username": "Filip",
+  "userPoints": 6,
+  "seznamSlozek": [
+    {
+      "folderName": "Slozka",
+      "seznamUkolu": [],
+      "seznamUkoluDone": []
+    },
+    {
+      "folderName": "Složka2",
+      "seznamUkolu": [],
+      "seznamUkoluDone": []
+    },
+    {
+      "folderName": "Slozka 3",
+      "seznamUkolu": [],
+      "seznamUkoluDone": []
+    }
+  ]
+}
